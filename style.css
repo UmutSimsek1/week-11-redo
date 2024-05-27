@@ -143,3 +143,88 @@ h1, h2, p {
   /* Add text-indent to all paragraphs except those with the class 'first' */
   p {text-indent: 5em;}
   p.first {text-indent: 0;}
+
+
+  /* Root custom properties */
+:root {
+    --base-font-color: rgb(131, 148, 150);
+    --secondary-font-color: rgb(88, 110, 117);
+    --emphasised-font: rgb(147, 161, 161);
+    --c-background-color: rgb(0, 43, 54);
+    --c-background-highlights: rgb(7, 54, 66);
+    --c-yellow: rgb(181, 137, 0);
+    --c-orange: rgb(203, 75, 22);
+    --c-red: rgb(220, 50, 47);
+    --c-magenta: rgb(211, 54, 130);
+    --c-violet: rgb(108, 113, 196);
+    --c-blue: rgb(38, 139, 210);
+    --c-cyan: rgb(42, 161, 152);
+    --c-green: rgb(133, 153, 0);
+  }
+  
+  /* Background and text color styles */
+  body {
+    background-color: var(--c-background-color);
+    color: var(--base-font-color);
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  header, footer {
+    background-color: var(--c-background-highlights);
+    color: var(--base-font-color);
+    text-align: center;
+    font-size: 150%;
+  }
+  
+  header h1 {
+    color: var(--c-yellow);
+  }
+  
+  /* Article section styles */
+  article h3 {
+    border: 3px solid var(--c-cyan);
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  article h3 + p {
+    border: 3px solid var(--c-cyan);
+    padding: 10px;
+    margin: 20px 0;
+  }
+  
+  /* Link styles */
+  article a {
+    color: var(--c-magenta);
+  }
+  
+  article a:hover {
+    color: var(--c-orange);
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  /* Aside styles */
+  aside {
+    color: var(--c-green);
+  }
+  
+  aside a {
+    color: var(--c-red);
+  }
+  
+  aside a:hover {
+    color: var(--c-blue);
+  }
