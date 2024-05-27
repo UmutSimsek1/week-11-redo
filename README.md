@@ -49,3 +49,10 @@ Inline code: `make this word inline`.
 # This is a large heading
 
 Format this text as code. 
+
+
+| Number | Color | Size |
+| ------:|:----- |:----:|
+|  10    | Red   |  Small |
+|  25    | Blue  |  Medium |
+|  50    | Green |  Large |
