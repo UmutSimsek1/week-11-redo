@@ -56,3 +56,9 @@ Format this text as code.
 |  10    | Red   |  Small |
 |  25    | Blue  |  Medium |
 |  50    | Green |  Large |
+
+
+
+```python
+def my_function():
+    print("Hello from a function")
