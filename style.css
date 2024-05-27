@@ -27,3 +27,51 @@ h1, h2, p {
   /* Add text-indent to all paragraphs except those with the class 'first' */
   p {text-indent: 5em;}
   p.first {text-indent: 0;}
+
+
+  /* Root custom properties */
+:root {
+    --base-font-color: rgb(131, 148, 150);
+    --secondary-font-color: rgb(88, 110, 117);
+    --emphasised-font: rgb(147, 161, 161);
+    --c-background-color: rgb(0, 43, 54);
+    --c-background-highlights: rgb(7, 54, 66);
+    --c-yellow: rgb(181, 137, 0);
+    --c-orange: rgb(203, 75, 22);
+    --c-red: rgb(220, 50, 47);
+    --c-magenta: rgb(211, 54, 130);
+    --c-violet: rgb(108, 113, 196);
+    --c-blue: rgb(38, 139, 210);
+    --c-cyan: rgb(42, 161, 152);
+    --c-green: rgb(133, 153, 0);
+  }
+  
+  /* These styles will remove all padding and margins on h1, h2 and p elements, and make the headings red. */
+  h1, h2, p {
+    padding: 0;
+    margin: 0;
+    font: 1em/1.33 Verdana, sans-serif;
+  }
+  
+  h1, h2 {
+    color: red;
+  }
+  
+  /* Set the font size for h1 to 16pt and h2 to 14pt */
+  h1 {font-size: 1.33em;}
+  h2 {font-size: 1.17em;}
+  
+  /* Add a bottom margin to paragraph tags */
+  p {margin: 0 0 0.5em 0;}
+  
+  /* Add margins to h1 and h2 to position closer to content */
+  h1, h2 {margin: 0.83em 0 0.17em 0; }
+  
+  /* Increase the font size of the first paragraph using shorthand font property */
+  p:first-of-type {
+    font: 1.17em/1.33 Verdana, sans-serif;
+  }
+  
+  /* Add text-indent to all paragraphs except those with the class 'first' */
+  p {text-indent: 5em;}
+  p.first {text-indent: 0;}
